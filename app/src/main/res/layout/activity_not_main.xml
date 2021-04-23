@@ -53,89 +53,13 @@
                 android:layout_weight="0.9"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/buttonA0"
+                <android.gesture.GestureOverlayView
+                    android:id="@+id/gestures1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:alpha="0"
-                    android:insetLeft="0dp"
-                    android:insetTop="20dp"
-                    android:insetRight="0dp"
-                    android:insetBottom="20dp"
-                    android:text="a5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp" />
+                    android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/buttonB0"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:alpha="0"
-                    android:insetLeft="0dp"
-                    android:insetTop="20dp"
-                    android:insetRight="0dp"
-                    android:insetBottom="20dp"
-                    android:text="b5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp" />
-
-                <Button
-                    android:id="@+id/buttonC0"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:alpha="0"
-                    android:insetLeft="0dp"
-                    android:insetTop="20dp"
-                    android:insetRight="0dp"
-                    android:insetBottom="20dp"
-                    android:text="c5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp" />
-
-                <Button
-                    android:id="@+id/buttonD0"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:alpha="0"
-                    android:insetLeft="0dp"
-                    android:insetTop="20dp"
-                    android:insetRight="0dp"
-                    android:insetBottom="20dp"
-                    android:text="d5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp" />
-
-                <Button
-                    android:id="@+id/buttonE0"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:alpha="0"
-                    android:insetLeft="0dp"
-                    android:insetTop="20dp"
-                    android:insetRight="0dp"
-                    android:insetBottom="20dp"
-                    android:text="e5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp" />
-
-                <Button
-                    android:id="@+id/buttonF0"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:alpha="0"
-                    android:insetLeft="0dp"
-                    android:insetTop="20dp"
-                    android:insetRight="0dp"
-                    android:insetBottom="20dp"
-                    android:text="f5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp" />
+                </android.gesture.GestureOverlayView>
 
             </LinearLayout>
 
@@ -1413,57 +1337,4 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <android.gesture.GestureOverlayView
-            android:id="@+id/gestures1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0.9">
-
-        </android.gesture.GestureOverlayView>
-
-        <android.gesture.GestureOverlayView
-            android:id="@+id/gestures2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-        </android.gesture.GestureOverlayView>
-
-        <android.gesture.GestureOverlayView
-            android:id="@+id/gestures3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-        </android.gesture.GestureOverlayView>
-
-        <android.gesture.GestureOverlayView
-            android:id="@+id/gestures4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-        </android.gesture.GestureOverlayView>
-
-        <android.gesture.GestureOverlayView
-            android:id="@+id/gestures5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-        </android.gesture.GestureOverlayView>
-
-        <android.gesture.GestureOverlayView
-            android:id="@+id/gestures6"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-        </android.gesture.GestureOverlayView>
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
