@@ -29,6 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="serif-monospace"
                 android:gravity="center"
                 android:text="GUITAR"
                 android:textColor="@color/white" />
@@ -668,6 +669,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="serif-monospace"
                 android:gravity="center"
                 android:text="5"
                 android:textColor="@color/white" />
@@ -677,6 +679,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="serif-monospace"
                 android:gravity="center"
                 android:text="4"
                 android:textColor="@color/white" />
@@ -686,6 +689,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="serif-monospace"
                 android:gravity="center"
                 android:text="3"
                 android:textColor="@color/white" />
@@ -695,6 +699,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="serif-monospace"
                 android:gravity="center"
                 android:text="2"
                 android:textColor="@color/white" />
@@ -704,6 +709,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="serif-monospace"
                 android:gravity="center"
                 android:text="1"
                 android:textColor="@color/white" />
