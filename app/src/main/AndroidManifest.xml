@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Guitar">
+        <activity android:name=".SelectGameModActivity"></activity>
         <activity android:name=".MenuActivity" />
         <activity android:name=".MainActivity2" />
         <activity
