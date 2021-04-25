@@ -25,7 +25,7 @@ public class SelectGameModActivity extends AppCompatActivity {
 
         CheckBox tapMode = (CheckBox)findViewById(R.id.checkBox2);
         CheckBox swipeMode = (CheckBox)findViewById(R.id.checkBox);
-        Button confirm = (Button)findViewById(R.id.button6); confirm.setEnabled(false);
+        Button confirm = (Button)findViewById(R.id.button6);
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
