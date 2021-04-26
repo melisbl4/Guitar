@@ -31,7 +31,6 @@ public class SelectGameModActivity extends AppCompatActivity {
         tap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                swipe.rel
                 tap.setVideoURI(Uri.parse("android.resource://" + getPackageName() +"/"+R.raw.tapmod));
                 tap.setMediaController(new MediaController(getApplicationContext()));
                 tap.requestFocus();
