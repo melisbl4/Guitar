@@ -607,7 +607,7 @@ public class MainActivity2 extends AppCompatActivity {
                     krug4.setAlpha(0);
                     krug5.setAlpha(255);
                 }
-                if(zeroLad==1){
+                if(zeroLad==1||zeroLad==3){
                     krug1.setAlpha(0);
                     krug2.setAlpha(255);
                     krug3.setAlpha(0);
@@ -620,13 +620,6 @@ public class MainActivity2 extends AppCompatActivity {
                     krug3.setAlpha(255);
                     krug4.setAlpha(0);
                     krug5.setAlpha(255);
-                }
-                if(zeroLad==3){
-                    krug1.setAlpha(0);
-                    krug2.setAlpha(255);
-                    krug3.setAlpha(0);
-                    krug4.setAlpha(255);
-                    krug5.setAlpha(0);
                 }
             }
         };

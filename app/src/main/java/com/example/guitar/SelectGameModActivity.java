@@ -2,15 +2,12 @@ package com.example.guitar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.MediaController;
 import android.widget.Toast;
-import android.widget.VideoView;
 
 public class SelectGameModActivity extends AppCompatActivity {
 
@@ -25,41 +22,6 @@ public class SelectGameModActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
-        VideoView tap = (VideoView)findViewById(R.id.videoView3);
-        VideoView swipe = (VideoView)findViewById(R.id.videoView2);
-        tap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tap.setVideoURI(Uri.parse("android.resource://" + getPackageName() +"/"+R.raw.tapmod));
-                tap.setMediaController(new MediaController(getApplicationContext()));
-                tap.requestFocus();
-                tap.start();
-            }
-        });
-        swipe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                swipe.setVideoURI(Uri.parse("android.resource://" + getPackageName() +"/"+R.raw.swipemod));
-                swipe.requestFocus();
-                swipe.setMediaController(new MediaController(getApplicationContext()));
-                swipe.start();
-            }
-        });
-
-        /*View.OnClickListener videoListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switch(v.getId()){
-                    case R.id.videoView3:
-                        tap.start(); break;
-                    case R.id.videoView2:
-                        swipe.start(); break;
-                }
-            }
-        };
-        tap.setOnClickListener(videoListener);
-        swipe.setOnClickListener(videoListener);*/
         CheckBox tapMode = (CheckBox)findViewById(R.id.checkBox2);
         CheckBox swipeMode = (CheckBox)findViewById(R.id.checkBox);
         Button confirm = (Button)findViewById(R.id.button6);
