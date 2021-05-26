@@ -20,9 +20,6 @@ public class MenuActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_menu);
-        Button play = (Button)findViewById(R.id.button);
-        Button settings = (Button)findViewById(R.id.button2);
-        Button authors = (Button)findViewById(R.id.button3);
     }
 
     @Override
@@ -30,13 +27,21 @@ public class MenuActivity extends AppCompatActivity {
         super.onStart();
 
         Button play = (Button)findViewById(R.id.button);
-        Button settings = (Button)findViewById(R.id.button2);
         Button authors = (Button)findViewById(R.id.button3);
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuActivity.this, SelectGameModActivity.class);
+                startActivity(intent);
+                MenuActivity.this.finish();
+            }
+        });
+
+        authors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, Authors.class);
                 startActivity(intent);
                 MenuActivity.this.finish();
             }

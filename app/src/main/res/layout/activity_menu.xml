@@ -702,22 +702,6 @@
                             app:iconTint="@android:color/darker_gray" />
 
                         <Button
-                            android:id="@+id/button2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:fontFamily="serif-monospace"
-                            android:insetLeft="0dp"
-                            android:insetTop="2dp"
-                            android:insetRight="0dp"
-                            android:insetBottom="2dp"
-                            android:text="Settings"
-                            app:backgroundTint="@color/cardview_shadow_end_color"
-                            app:cornerRadius="4dp"
-                            app:icon="@android:drawable/ic_menu_preferences"
-                            app:iconTint="@color/white" />
-
-                        <Button
                             android:id="@+id/button3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"

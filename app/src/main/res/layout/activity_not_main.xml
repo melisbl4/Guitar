@@ -17,29 +17,55 @@
 
             <ImageButton
                 android:id="@+id/imageButtonPlus"
-                app:srcCompat="@android:drawable/ic_media_rew"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:background="@android:color/transparent" />
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:srcCompat="@android:drawable/ic_media_rew" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="MENU"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:elevation="0dp"
+                app:icon="@android:drawable/ic_menu_sort_by_size"
+                app:iconPadding="0dp" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.7"
                 android:fontFamily="serif-monospace"
                 android:gravity="center"
                 android:text="GUITAR"
                 android:textColor="@color/white" />
 
-            <ImageButton
-                android:id="@+id/imageButtonMinus"
-                app:srcCompat="@android:drawable/ic_media_ff"
+            <Button
+                android:id="@+id/button7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:background="@android:color/transparent" />
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Switch mod"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:elevation="0dp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonMinus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:srcCompat="@android:drawable/ic_media_ff" />
         </TableRow>
 
         <LinearLayout

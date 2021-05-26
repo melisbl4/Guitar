@@ -1,6 +1,8 @@
 package com.example.guitar;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -134,6 +136,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        Toast.makeText(getApplicationContext(), "Swipe mod activated", Toast.LENGTH_LONG).show();
 
         a = MediaPlayer.create(this, R.raw.a0);
         b = MediaPlayer.create(this, R.raw.b0);
@@ -658,6 +661,25 @@ public class MainActivity2 extends AppCompatActivity {
         plusLads.setOnClickListener(forwardBackClickListener);
         ImageButton minusLads = (ImageButton) findViewById(R.id.imageButtonMinus);
         minusLads.setOnClickListener(forwardBackClickListener);
+
+        Button menu = (Button)findViewById(R.id.button5); menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, MenuActivity.class);
+                startActivity(intent);
+                MainActivity2.this.finish();
+            }
+        });
+
+        Button switchMod = (Button)findViewById(R.id.button7); switchMod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+                startActivity(intent);
+                MainActivity2.this.finish();
+            }
+        });
+
     }
 
     @Override

@@ -1,6 +1,8 @@
 package com.example.guitar;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        Toast.makeText(getApplicationContext(), "Tap mod activated", Toast.LENGTH_LONG).show();
 
         a = MediaPlayer.create(this, R.raw.a0);
         b = MediaPlayer.create(this, R.raw.b0);
@@ -605,6 +608,24 @@ public class MainActivity extends AppCompatActivity {
         plusLads.setOnClickListener(forwardBackClickListener);
         ImageButton minusLads = (ImageButton) findViewById(R.id.imageButtonMinus);
         minusLads.setOnClickListener(forwardBackClickListener);
+
+        Button menu = (Button)findViewById(R.id.button2); menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                startActivity(intent);
+                MainActivity.this.finish();
+            }
+        });
+
+        Button switchMod = (Button)findViewById(R.id.button4); switchMod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+                MainActivity.this.finish();
+            }
+        });
     }
 
     @Override
