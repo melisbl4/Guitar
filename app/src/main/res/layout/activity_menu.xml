@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MenuActivity">
+    tools:context=".Menu">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -711,7 +711,7 @@
                             android:insetTop="2dp"
                             android:insetRight="0dp"
                             android:insetBottom="2dp"
-                            android:text="Authors"
+                            android:text="Info"
                             app:backgroundTint="@color/cardview_shadow_end_color"
                             app:cornerRadius="4dp"
                             app:icon="@android:drawable/ic_menu_info_details"

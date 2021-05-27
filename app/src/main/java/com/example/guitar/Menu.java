@@ -4,13 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.TextView;
 
-public class MenuActivity extends AppCompatActivity {
+public class Menu extends AppCompatActivity {
 
 
 
@@ -32,18 +30,18 @@ public class MenuActivity extends AppCompatActivity {
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, SelectGameModActivity.class);
+                Intent intent = new Intent(Menu.this, SelectGameMod.class);
                 startActivity(intent);
-                MenuActivity.this.finish();
+                Menu.this.finish();
             }
         });
 
         authors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, Authors.class);
+                Intent intent = new Intent(Menu.this, Info.class);
                 startActivity(intent);
-                MenuActivity.this.finish();
+                Menu.this.finish();
             }
         });
     }

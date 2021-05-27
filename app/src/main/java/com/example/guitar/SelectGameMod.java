@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
-public class SelectGameModActivity extends AppCompatActivity {
+public class SelectGameMod extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,14 +29,14 @@ public class SelectGameModActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(tapMode.isChecked()&&!swipeMode.isChecked()){
-                    Intent intent = new Intent(SelectGameModActivity.this, MainActivity.class);
+                    Intent intent = new Intent(SelectGameMod.this, TapMod.class);
                     startActivity(intent);
-                    SelectGameModActivity.this.finish();
+                    SelectGameMod.this.finish();
                 }
                 if(swipeMode.isChecked()&&!tapMode.isChecked()){
-                    Intent intent = new Intent(SelectGameModActivity.this, MainActivity2.class);
+                    Intent intent = new Intent(SelectGameMod.this, SwipeMod.class);
                     startActivity(intent);
-                    SelectGameModActivity.this.finish();
+                    SelectGameMod.this.finish();
                 }
                 if(!swipeMode.isChecked()&&!tapMode.isChecked()){
                     Toast.makeText(getApplicationContext(), "Выберите режим игры", Toast.LENGTH_LONG).show();

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background">
@@ -24,34 +25,35 @@
                 app:srcCompat="@android:drawable/ic_media_rew" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.77"
                 android:fontFamily="serif-monospace"
+                android:insetLeft="0dp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="MENU"
+                android:text="Menu"
                 app:backgroundTint="@color/cardview_shadow_end_color"
                 app:elevation="0dp"
-                app:icon="@android:drawable/ic_menu_sort_by_size"
-                app:iconPadding="0dp" />
+                app:iconPadding="0dp"
+                app:iconTint="@color/white" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.7"
+                android:layout_weight="1"
                 android:fontFamily="serif-monospace"
                 android:gravity="center"
                 android:text="GUITAR"
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.77"
                 android:fontFamily="serif-monospace"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
@@ -78,15 +80,101 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.9"
-                android:orientation="vertical"/>
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonA0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0"
+                    android:insetLeft="0dp"
+                    android:insetTop="20dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="20dp"
+                    android:text="a5"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/buttonB0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0"
+                    android:insetLeft="0dp"
+                    android:insetTop="20dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="20dp"
+                    android:text="b5"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/buttonC0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0"
+                    android:insetLeft="0dp"
+                    android:insetTop="20dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="20dp"
+                    android:text="c5"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/buttonD0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0"
+                    android:insetLeft="0dp"
+                    android:insetTop="20dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="20dp"
+                    android:text="d5"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/buttonE0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0"
+                    android:insetLeft="0dp"
+                    android:insetTop="20dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="20dp"
+                    android:text="e5"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/buttonF0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0"
+                    android:insetLeft="0dp"
+                    android:insetTop="20dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="20dp"
+                    android:text="f5"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
+
+            </LinearLayout>
 
             <ImageView
                 android:id="@+id/imageView2"
-                app:srcCompat="@android:drawable/divider_horizontal_bright"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15"
-                android:background="@drawable/lad" />
+                android:background="@drawable/lad"
+                app:srcCompat="@android:drawable/divider_horizontal_bright" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -96,8 +184,6 @@
 
                 <Button
                     android:id="@+id/buttonA5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -106,12 +192,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="a4" />
+                    android:text="a4"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonB5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -120,12 +206,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="b4" />
+                    android:text="b4"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonC5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -134,12 +220,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="c4" />
+                    android:text="c4"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonD5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -148,12 +234,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="d4" />
+                    android:text="d4"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonE5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -162,12 +248,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="e4" />
+                    android:text="e4"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonF5"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -176,17 +262,19 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="f4" />
+                    android:text="f4"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
             </LinearLayout>
 
             <ImageView
                 android:id="@+id/imageView3"
-                app:srcCompat="@android:drawable/divider_horizontal_bright"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15"
-                android:background="@drawable/lad" />
+                android:background="@drawable/lad"
+                app:srcCompat="@android:drawable/divider_horizontal_bright" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -196,8 +284,6 @@
 
                 <Button
                     android:id="@+id/buttonA4"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -206,12 +292,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="a3" />
+                    android:text="a3"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonB4"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -220,12 +306,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="b3" />
+                    android:text="b3"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonC4"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -234,12 +320,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="c3" />
+                    android:text="c3"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonD4"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -248,12 +334,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="d3" />
+                    android:text="d3"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonE4"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -262,12 +348,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="e3" />
+                    android:text="e3"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonF4"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -276,17 +362,19 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="f3" />
+                    android:text="f3"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
             </LinearLayout>
 
             <ImageView
                 android:id="@+id/imageView4"
-                app:srcCompat="@android:drawable/divider_horizontal_bright"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15"
-                android:background="@drawable/lad" />
+                android:background="@drawable/lad"
+                app:srcCompat="@android:drawable/divider_horizontal_bright" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -296,8 +384,6 @@
 
                 <Button
                     android:id="@+id/buttonA3"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -306,12 +392,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="a2" />
+                    android:text="a2"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonB3"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -320,12 +406,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="b2" />
+                    android:text="b2"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonC3"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -334,12 +420,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="c2" />
+                    android:text="c2"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonD3"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -348,12 +434,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="d2" />
+                    android:text="d2"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonE3"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -362,12 +448,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="e2" />
+                    android:text="e2"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonF3"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -376,17 +462,19 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="f2" />
+                    android:text="f2"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
             </LinearLayout>
 
             <ImageView
                 android:id="@+id/imageView5"
-                app:srcCompat="@android:drawable/divider_horizontal_bright"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15"
-                android:background="@drawable/lad" />
+                android:background="@drawable/lad"
+                app:srcCompat="@android:drawable/divider_horizontal_bright" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -396,8 +484,6 @@
 
                 <Button
                     android:id="@+id/buttonA2"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -406,12 +492,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="a1" />
+                    android:text="a1"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonB2"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -420,12 +506,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="b1" />
+                    android:text="b1"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonC2"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -434,12 +520,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="c1" />
+                    android:text="c1"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonD2"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -448,12 +534,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="d1" />
+                    android:text="d1"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonE2"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -462,12 +548,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="e1" />
+                    android:text="e1"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonF2"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -476,17 +562,19 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="f1" />
+                    android:text="f1"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
             </LinearLayout>
 
             <ImageView
                 android:id="@+id/imageView6"
-                app:srcCompat="@android:drawable/divider_horizontal_bright"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15"
-                android:background="@drawable/lad" />
+                android:background="@drawable/lad"
+                app:srcCompat="@android:drawable/divider_horizontal_bright" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -496,8 +584,6 @@
 
                 <Button
                     android:id="@+id/buttonA1"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -506,12 +592,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="a0" />
+                    android:text="a0"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonB1"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -520,12 +606,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="b0" />
+                    android:text="b0"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonC1"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -534,12 +620,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="c0" />
+                    android:text="c0"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonD1"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -548,12 +634,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="d0" />
+                    android:text="d0"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonE1"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -562,12 +648,12 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="e0" />
+                    android:text="e0"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
                 <Button
                     android:id="@+id/buttonF1"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="0dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -576,7 +662,9 @@
                     android:insetTop="20dp"
                     android:insetRight="0dp"
                     android:insetBottom="20dp"
-                    android:text="f0" />
+                    android:text="f0"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="0dp" />
 
             </LinearLayout>
 
@@ -704,7 +792,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15"
-                android:alpha="0"
                 app:srcCompat="@android:drawable/divider_horizontal_dark" />
 
             <LinearLayout
@@ -748,7 +835,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15"
-                android:alpha="0"
                 app:srcCompat="@android:drawable/divider_horizontal_dark" />
 
             <LinearLayout
@@ -792,7 +878,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15"
-                android:alpha="0"
                 app:srcCompat="@android:drawable/divider_horizontal_dark" />
 
             <LinearLayout
@@ -836,7 +921,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15"
-                android:alpha="0"
                 app:srcCompat="@android:drawable/divider_horizontal_dark" />
 
             <LinearLayout
@@ -880,7 +964,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15"
-                android:alpha="0"
                 app:srcCompat="@android:drawable/divider_horizontal_dark" />
 
             <LinearLayout
@@ -1363,109 +1446,4 @@
             android:layout_weight="1" />
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.2"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0.9"
-            android:orientation="vertical">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="10" />
-
-            <android.gesture.GestureOverlayView
-                android:id="@+id/gestures1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-            </android.gesture.GestureOverlayView>
-
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView202"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.15"
-            android:alpha="0"
-            android:background="@drawable/lad"
-            app:srcCompat="@android:drawable/divider_horizontal_bright" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical" />
-
-        <ImageView
-            android:id="@+id/imageView203"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.15"
-            android:alpha="0"
-            android:background="@drawable/lad"
-            app:srcCompat="@android:drawable/divider_horizontal_bright" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical" />
-
-        <ImageView
-            android:id="@+id/imageView204"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.15"
-            android:alpha="0"
-            android:background="@drawable/lad"
-            app:srcCompat="@android:drawable/divider_horizontal_bright" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical" />
-
-        <ImageView
-            android:id="@+id/imageView205"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.15"
-            android:alpha="0"
-            android:background="@drawable/lad"
-            app:srcCompat="@android:drawable/divider_horizontal_bright" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical" />
-
-        <ImageView
-            android:id="@+id/imageView206"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.15"
-            android:alpha="0"
-            android:background="@drawable/lad"
-            app:srcCompat="@android:drawable/divider_horizontal_bright" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical" />
-
-    </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

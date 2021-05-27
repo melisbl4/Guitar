@@ -22,7 +22,7 @@ import android.gesture.Prediction;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-public class MainActivity2 extends AppCompatActivity {
+public class SwipeMod extends AppCompatActivity {
 
     private MediaPlayer a, b, c, d, e, f;
     private int zeroLad = 0;
@@ -33,7 +33,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_not_main);
+        setContentView(R.layout.activity_swipe_mod);
 
         GestureOverlayView gestureview = (GestureOverlayView) findViewById(R.id.gestures1);
 
@@ -665,18 +665,18 @@ public class MainActivity2 extends AppCompatActivity {
         Button menu = (Button)findViewById(R.id.button5); menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this, MenuActivity.class);
+                Intent intent = new Intent(SwipeMod.this, Menu.class);
                 startActivity(intent);
-                MainActivity2.this.finish();
+                SwipeMod.this.finish();
             }
         });
 
         Button switchMod = (Button)findViewById(R.id.button7); switchMod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+                Intent intent = new Intent(SwipeMod.this, TapMod.class);
                 startActivity(intent);
-                MainActivity2.this.finish();
+                SwipeMod.this.finish();
             }
         });
 

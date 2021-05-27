@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Authors">
+    tools:context=".Info">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@android:drawable/divider_horizontal_dark"
+                android:background="@color/cardview_shadow_end_color"
                 app:srcCompat="@android:drawable/ic_menu_revert" />
 
             <LinearLayout
@@ -48,7 +48,7 @@
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:text="Приложение создано двумя учащимися IT школы Samsung. Приложение реализовано очень криво и предначено скорее для развлечение, чем для концертов, лол)))"
+                android:text="Приложение создано двумя учащимися IT школы Samsung. В нём (ПОКА ЧТО) реализованы только основные фунции гитары. Приложение предназначено скорее для развлечения, чем для концертов."
                 android:textColor="#20409a"
                 android:textSize="20sp" />
 

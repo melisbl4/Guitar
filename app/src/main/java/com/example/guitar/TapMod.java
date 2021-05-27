@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class TapMod extends AppCompatActivity {
     private MediaPlayer a, b, c, d, e, f;
     private int zeroLad = 0;
 
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main_main);
+        setContentView(R.layout.activity_tap_mod);
     }
 
     public void soundPlay(MediaPlayer sound) {
@@ -612,18 +612,18 @@ public class MainActivity extends AppCompatActivity {
         Button menu = (Button)findViewById(R.id.button2); menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                Intent intent = new Intent(TapMod.this, Menu.class);
                 startActivity(intent);
-                MainActivity.this.finish();
+                TapMod.this.finish();
             }
         });
 
         Button switchMod = (Button)findViewById(R.id.button4); switchMod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                Intent intent = new Intent(TapMod.this, SwipeMod.class);
                 startActivity(intent);
-                MainActivity.this.finish();
+                TapMod.this.finish();
             }
         });
     }

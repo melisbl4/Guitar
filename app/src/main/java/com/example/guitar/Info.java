@@ -8,14 +8,14 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
-public class Authors extends AppCompatActivity {
+public class Info extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_authors);
+        setContentView(R.layout.activity_info);
     }
 
     @Override
@@ -25,9 +25,9 @@ public class Authors extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Authors.this, MenuActivity.class);
+                Intent intent = new Intent(Info.this, Menu.class);
                 startActivity(intent);
-                Authors.this.finish();
+                Info.this.finish();
             }
         });
     }
